@@ -53,7 +53,7 @@ People Who can Contribute :
 
 
 =========== IMPORTANT NOTES ===========
-* All pull requests must contain a screenshot, showing the visible change in the website. Else, requests will not me merged.
+* All pull requests must contain a screenshot, showing the visible change in the website. Else, requests will not be merged.
 * Make small changes, avoid making requests after a big change.
 * Create pull requests one at a time. Do not make too many requests at the same time if previous requests have not been merged.
 * All pages must be responsive. Every element inserted should be responsive.

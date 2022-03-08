@@ -12,9 +12,10 @@ People Who can Contribute :
 
 
 ========== Color Codes to Use =======
-*
-*
-*
+* #EFFFFD
+* #B8FFF9
+* #85F4FF
+* #42C2FF
 
 
 ============= Units =================

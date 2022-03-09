@@ -8,7 +8,7 @@ People Who can Contribute :
 * Gaurav Kumar Singh
 * Rajat Verma
 * Tavneet Kaur Gil
-* Tripti Verma
+* Tripti Sharma
 
 
 ========== Color Codes to Use =======

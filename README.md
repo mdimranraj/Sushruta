@@ -23,6 +23,18 @@ People Who can Contribute :
 * Element / component sizes may be in pixels or rem/em ( Preferably pixels ). Do not use rem/em if browser enlargement is not needed for the element.
 * Sections can be made Using "vh" and "vw" or pixels. Use the viewport units wisely to be responsive.
 
+========= Fonts to use==============
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Luxurious+Roman&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:wght@300&family=The+Nautigal&display=swap" rel="stylesheet">
+
+
+=== how to use fonts ==========
+font-family: 'Cinzel', serif;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'The Nautigal', cursive;
 
 ======== Media Query BreakPoints =========
      

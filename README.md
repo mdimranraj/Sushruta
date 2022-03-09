@@ -17,6 +17,9 @@ People Who can Contribute :
 * #85F4FF
 * #42C2FF
 
+* #00C4CC (Sage blue / cyan)
+* white
+
 
 ============= Units =================
 * Only "rem" and "em" should be used with fonts
@@ -60,9 +63,8 @@ font-family: 'The Nautigal', cursive;
 
 
 =============== Pages to Make ==============
-*
-*
-*
+Mind map link:
+https://atlas.mindmup.com/2022/03/902fe8109fd211ec98ccaff4961fd0a6/home_page/index.html
 
 
 =========== IMPORTANT NOTES ===========

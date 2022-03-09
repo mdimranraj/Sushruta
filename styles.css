@@ -7,7 +7,7 @@ body{
 }
 #first {
   position: relative;
-  background: #85F4FF;
+  background: #00C4CC;
   height: 80vh;
   border-bottom-left-radius: 50% 19%;
   border-bottom-right-radius: 50% 19%;
@@ -18,7 +18,7 @@ body{
 }
 #third {
     position: relative;
-    background: #85F4FF;
+    background: #00C4CC;
     height: 80vh;
     border-top-left-radius: 50% 19%;
     border-top-right-radius: 50% 19%;

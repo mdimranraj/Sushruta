@@ -14,24 +14,24 @@
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
-    color: #00C4CC;
+    color: #fff;
   }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #00C4CC;
+    color: #fff;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #00C4CC;
+    color: #fff;
     font-weight: 400;
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: #00C4CC;
+    background-color: #00c4cc;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -40,11 +40,11 @@
     padding: 60px 50px;
   }
   .logo-small {
-    color: #00C4CC;
+    color: #fff;
     font-size: 50px;
   }
   .logo {
-    color: #00C4CC;
+    color: #fff;
     font-size: 200px;
   }
   .thumbnail {
@@ -59,13 +59,13 @@
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #00C4CC;
+    color: #fff;
   }
   .carousel-indicators li {
-    border-color: #00C4CC;
+    border-color: #fff;
   }
   .carousel-indicators li.active {
-    background-color: #00C4CC;
+    background-color: #fff;
   }
   .item h4 {
     font-size: 19px;
@@ -78,7 +78,7 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid #00C4CC; 
+    border: 1px solid #fff; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -86,13 +86,13 @@
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #00C4CC;
+    border: 1px solid #fff;
     background-color: #fff !important;
-    color: #00C4CC;
+    color: #fff;
   }
   .panel-heading {
     color: #fff !important;
-    background-color: #00C4CC !important;
+    background-color: #fff !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -107,12 +107,12 @@
     font-size: 32px;
   }
   .panel-footer h4 {
-    color: #00C4CC;
+    color: #fff;
     font-size: 14px;
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #00C4CC;
+    background-color: #fff;
     color: #fff;
   }
   .navbar {
@@ -140,7 +140,7 @@
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #00C4CC;
+    color: #fff;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -187,7 +187,7 @@
   }
   </style>
 </head>
-<body background-image:"back.jpeg"; id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body style="background-image: url('back.jpeg'); id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -243,7 +243,7 @@
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-file logo-small"></span>
-      <h4><a href="">UPLOAD</a></h4>
+      <h4><a style="color:white"; href="">UPLOAD</a></h4>
     </div>
   </div>
 </div>
@@ -252,11 +252,13 @@
   <h2>VIEW/UPDATE</h2><br>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
-      <button class="btn btn-default pull-right" type="submit">VIEW</button>
-    </div>
+      <span class="glyphicon glyphicon-folder-open logo-small"></span>
+      <h4><a style="color:white"; href="">VIEW</a></h4>
+	  </div>
 	<div class="col-sm-4">
-	   <button class="btn btn-default pull-right" type="submit">UPDATE</button>
-    </div>
+	   <span class="glyphicon glyphicon-retweet logo-small"></span>
+      <h4><a style="color:white"; href="">UPDATE</a></h4>
+	  </div>
   </div><br><br><br><br>
   
   <h2>PATIENT RIGHTS</h2>

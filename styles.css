@@ -12,3 +12,12 @@ body{
 .navbar-css{
     background-color: #00C4CC; 
 }
+.logo-1{
+    height: 50px;
+}
+.user-icon{
+    height: 50px;
+}
+.nv-find{
+    padding: 0 8px !important;
+}

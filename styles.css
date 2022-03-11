@@ -1,27 +1,14 @@
 body{
     margin: 0;
 }
-
-#main {
-    background: #42C2FF;
+#first{
+    height: 100vh;
+    background-image: url(images/bg.svg);
+    background-size: cover;
 }
-#first {
-  position: relative;
-  background: #85F4FF;
-  height: 80vh;
-  border-bottom-left-radius: 50% 19%;
-  border-bottom-right-radius: 50% 19%;
+.navbar-css-container{
+    padding: 0;
 }
-#second {
-    height: 50vh;
-    background: #42C2FF;
+.navbar-css{
+    background-color: #00C4CC; 
 }
-#third {
-    position: relative;
-    background: #85F4FF;
-    height: 80vh;
-    border-top-left-radius: 50% 19%;
-    border-top-right-radius: 50% 19%;
-  }
-  
-  

@@ -56,4 +56,15 @@ body{
 .second-container{
     width: 80%;
     margin: 0 auto 0 auto;
+    padding: 5%;
+    text-align: center;
 }
+.second-container h2{
+    font-size: 3rem;
+    color: #00C4CC ;
+}
+.second-text{
+    font-size: 1rem;
+    padding: 2% 0 0 0;
+}
+

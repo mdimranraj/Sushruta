@@ -23,7 +23,7 @@ body{
     height: 50px;
 }
 .heading-text{
-    margin: 100px 0 0 100px;
+    margin: 10% 0 0 10%;
 
 }
 .heading-text h1{
@@ -37,3 +37,23 @@ body{
     font-weight: bold;
 }
 
+.nha-pic{
+    width: 200px;
+    margin:auto 10% 0 auto;
+}
+.nha-pic img{
+    width: 200px;
+}
+
+/* ============== Section 2 ==================== */
+#second{
+    /* background-color: #EFFFFD; */
+    background-color: #B8FFF9;
+    /* background-color: #85F4FF; */
+    /* background-color: #42C2FF; */
+   
+}
+.second-container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}

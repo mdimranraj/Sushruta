@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
 }
@@ -17,5 +21,19 @@ body{
 }
 .user-icon{
     height: 50px;
+}
+.heading-text{
+    margin: 100px 0 0 100px;
+
+}
+.heading-text h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.heading-text h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 

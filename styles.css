@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 body{
     margin: 0;
 }
@@ -68,3 +72,14 @@ body{
     padding: 2% 0 0 0;
 }
 
+/* ================= Section 3 ================== */
+#footer{
+    background-color: #00C4CC;
+    height: fit-content;
+}
+.footer-heading{
+    color: #fff;
+}
+.footer-ln-pic{
+    width: 1rem;
+}

@@ -77,6 +77,12 @@ body{
     background-color: #00C4CC;
     height: fit-content;
 }
+.container{
+    padding: 15px;
+}
+.container-inside{
+    justify-content: space-around !important;
+}
 .footer-heading{
     color: #fff;
 }

@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
 }
@@ -17,5 +21,50 @@ body{
 }
 .user-icon{
     height: 50px;
+}
+.heading-text{
+    margin: 10% 0 0 10%;
+
+}
+.heading-text h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.heading-text h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nha-pic{
+    width: 200px;
+    margin:auto 10% 0 auto;
+}
+.nha-pic img{
+    width: 200px;
+}
+
+/* ============== Section 2 ==================== */
+#second{
+    /* background-color: #EFFFFD; */
+    background-color: #B8FFF9;
+    /* background-color: #85F4FF; */
+    /* background-color: #42C2FF; */
+   
+}
+.second-container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 5%;
+    text-align: center;
+}
+.second-container h2{
+    font-size: 3rem;
+    color: #00C4CC ;
+}
+.second-text{
+    font-size: 1rem;
+    padding: 2% 0 0 0;
 }
 

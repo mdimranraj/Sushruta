@@ -1,9 +1,9 @@
-   <!doctype html>
+  <!doctype html>
                         <html>
                             <head>
                                 <meta charset='utf-8'>
                                 <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>Sushruta-File A Complaint</title>
+                                <title>Snippet - BBBootstrap</title>
                                 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
                                 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
                                 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -11,7 +11,7 @@
     color: #ffffff;
     overflow-x: hidden;
     height: 100%;
-    background-image: "Background.svg";
+    background-image: url("Background.svg");
     background-repeat: no-repeat;
     background-color: #00C4CC;
     background-size: 100% 100%
@@ -45,7 +45,15 @@ button {
     font-size: 18px !important;
     font-weight: 300
 }
-
+.form-select{
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
 input:focus,
 textarea:focus {
     -moz-box-shadow: none !important;
@@ -76,6 +84,7 @@ button:focus {
 }</style>
                                 </head>
                                 <body oncontextmenu='return false' class='snippet-body'>
+                                <img src= "logo-sushruta-1.png" alt="LOGO" class="mr-3 mt-3 rounded-circle" style="width:100px;">
                                 <div class="container-fluid px-1 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
@@ -93,13 +102,12 @@ button:focus {
                         <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="Enter your contact Number" onblur="validate(4)"> </div>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">File a complaint against
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Doctor</a></li>
-                          <li><a href="#">Hospital</a></li>
-                          <li><a href="#">Insurance Provider</a></li>
-                        </ul>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>File a complaint against</option>
+                          <option value="1">Doctor</option>
+                          <option value="2">Hospital</option>
+                          <option value="3">Insurance Provider</option>
+                        </select>
                       </div>
                     <div class="row justify-content-between text-left">
                         <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Type down your issues here<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>

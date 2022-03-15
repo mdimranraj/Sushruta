@@ -48,6 +48,26 @@ body{
 .nha-pic img{
     width: 200px;
 }
+.counter-container{
+    margin: 0 0 0 10%;
+}
+.counter-container .col{
+    padding-left: 0;
+}
+.counter{
+    text-align: left;
+}
+.counter-row{
+    width: fit-content;
+}
+.counter-heading{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+.counter-img{
+    width: 200px;
+}
 
 /* ============== Section 2 ==================== */
 #second{

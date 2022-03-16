@@ -5,18 +5,81 @@
         <title>Attendence</title>
         <meta name = "viewport" content = "width=device-width, intial-scale=1" />
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script>
+            let hr = min = sec = ms = "0" + 0,
+                startTimer;
+
+            const startBtn = document.querySelector(".start"),
+            stopBtn = document.querySelector(".stop"),
+            resetBtn = document.querySelector(".reset");
+
+            startBtn.addEventListener("click", start);
+            stopBtn.addEventListener("click", stop);
+            resetBtn.addEventListener("click", reset);
+
+            function start() {
+                startBtn.classList.add("active");
+                stopBtn.classList.remove("stopActive");
+
+                startTimer = setInterval(()=>{
+                ms++
+                ms = ms < 10 ? "0" + ms : ms;
+
+                if(ms == 100){
+                    sec++;
+                    sec = sec < 10 ? "0" + sec : sec;
+                    ms = "0" + 0;
+                }
+                if(sec == 60){
+                    min++;
+                    min = min < 10 ? "0" + min : min;
+                    sec = "0" + 0;
+                }
+                if(min == 60){
+                    hr++;
+                    hr = hr < 10 ? "0" + hr : hr;
+                    min = "0" + 0;
+                }
+                putValue();
+                },10); //1000ms = 1s
+
+            }
+
+            function stop() {
+                startBtn.classList.remove("active");
+                stopBtn.classList.add("stopActive");
+                clearInterval(startTimer);
+            }
+            function reset() {
+                startBtn.classList.remove("active");
+                stopBtn.classList.remove("stopActive");
+                clearInterval(startTimer);
+                hr = min = sec = ms = "0" + 0;
+                putValue();
+            }
+
+            function putValue() {
+                document.querySelector(".millisecond").innerText = ms;
+                document.querySelector(".second").innerText = sec;
+                document.querySelector(".minute").innerText = min;
+                document.querySelector(".hour").innerText = hr;
+            }
+    </script>
+
     </head>
     <body>
+        <input type="checkbox" id="nav-toggle">
+ 
         <div class = "main-content">
             <header>
-                    <h1>
-                        <label for ="">
-                            <span class = "las la-bars"></span>
+                    <h3>
+                        <label for ="nav-toggle">
+                            <img src="सुश्रुत (1).png" width= 75rem height=65rem alt="">
                         </label>
-                        Attendence
-                    </h1>
+                    </h3>
 
                     <div class ="search-wrapper">
                         <span class= "las la-search"></span>
@@ -24,17 +87,44 @@
                     </div>
 
                     <div class = "user-wrapper">
-                        <img src="icons8-user-66.jpg" width ="30px" height="30px" alt="">
+                        <img src="icons8-user-66.png" width ="30px" height="30px" alt="">
                         <div>
-                            <h4>John Doe</h4>
-                            <small>Super admin</small>
+                            <h5>Name</h5>
+                            <small>User</small>
                         </div>
                     </div>
             </header>
 
             <main>
-                <div class="cards", class="row">
-                    <div class="card-single",class="col-sm-3">
+                <div class="start">
+                    <img src="doctor.png" width="600px" height="500px" alt="">
+                    <div class="check-in">
+                     <h5>Check-in time</h5>
+                    <div class="wrapper">
+                        <div class="time">
+                            <span class="hour">00</span>
+                            <span class="colon">:</span>
+                            <span class="minute">00</span>
+                            <span class="colon">:</span>
+                            <span class="second">00</span>
+                            <span class="colon ms-colon">:</span>
+                            <span class="millisecond">00</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="start">Start</button>
+                            <button class="stop">Stop</button>
+                        </div>
+                    </div>
+                </div>      
+                </div>
+                <section>
+                    <div class="title">
+                        <h1>Attendance Log</h1>
+                        <div class="line"></div>
+                    </div>
+                </section>
+                <div class="cards">
+                    <div class="card-single">
                         <div>
                             <h1>54</h1>
                             <span>Doctors</span>
@@ -43,8 +133,8 @@
                             <span class ="las la-users"></span>
                         </div>
                     </div>
-                <div class="cards">
-                    <div class="card-single",class="col-sm-4">
+
+                    <div class="card-single">
                         <div>
                             <h1>79</h1>
                             <span>Currently Available</span>
@@ -53,9 +143,8 @@
                             <span class ="las la-clipboard"></span>
                         </div>
                     </div>
-                </div>
-                <div class="cards">
-                    <div class="card-single",class="col-sm-4">
+
+                    <div class="card-single">
                         <div>
                             <h1>124</h1>
                             <span>Reports pending</span>
@@ -65,18 +154,215 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards",class="col-sm-4">
-                    <div class="card-single">
-                        <div>
-                            <h1>54</h1>
-                            <span>Income</span>
-                        </div>
-                        <div>
-                            <span class ="lab la-google-wallet"></span>
+                
+            <section>
+                    <div class="title">
+                        <h1>Patient Details</h1>
+                        <div class="line"></div>
+                    </div>
+            </section>
+
+                <div class="recent-grid">
+                    <div class="projects">
+                       <div class="card">
+                           <div class="card-header">
+                               <h3>Pending Patient Reports</h3>
+     
+                               <button>See all <span class="las la-arrow-right"></span></button>
+                           </div>
+                               
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table width ="100%">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Report Analyzed</td>
+                                                <td>Status</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ABC</td>
+                                                <td>92%</td>
+                                                <td>
+                                                    <span class="status"></span>
+                                                    review
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>XYZ</td>
+                                                <td>60%</td>
+                                               <td>
+                                                   <span class="status"></span>
+                                                   in progress
+                                               </td>                                    
+                                             </tr>
+                                            <tr>
+                                                <td>123</td>
+                                                <td>20%</td>
+                                                <td>
+                                                    <span class="status"></span>
+                                                    pending
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABC</td>
+                                                <td>92%</td>
+                                                <td>
+                                                    <span class="status"></span>
+                                                    review
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABC</td>
+                                                <td>92%</td>
+                                                <td>
+                                                    <span class="status"></span>
+                                                    review
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                   </div>
+                               </div>
+                           </div>
+                    </div>
+                    
+                    
+                    <!--<div class="popup center">
+                        <div class="Patient-id">
+                            <div class="d-flex justify-content-center align-items-center container">
+                                <div class="card py-5 px-3">
+                                    <h5 class="m-0">Mobile Phone Verification</h5>
+                                    <span class="mobile-text">Enter the code we just send on your Mobile Phone
+                                    <B class="text-danger">980000000</B>
+
+                                </span>
+                                    <div class="d-flex flex-row mt-5">
+                                        <input type="text" class="form-control" autofocus="">
+                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control">
+
+                                    </div>
+
+                                    <div class="text-center mt-5">
+                                        <span class="d-block mobile-text">Don't receive the code?</span>
+                                        <span class="font-weight-bold text-danger cursor">Resend Code</span>
+                                    </div>
+                                    <div class="close-btn">
+                                        <button class="close-popup-btn">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-				</div>
+                -->
+     
+                      <!--Patient record-->
+                            <div class="customers">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>New Patients</h3>
+      
+                                        <button>See all <span class="las la-arrow-right"></span></button>
+                                    </div>
+      
+                                    <div class="card-body">
+                                        <div class="customer">
+                                            <div class="info">
+                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <div>
+                                                    <h4>Lewis S. Cunningham</h4>
+                                                    <small>CEO Expert</small>
+                                                </div>
+                                            </div>
+                                            <div class="contact">
+                                                <span class="las la-user-circle"></span>
+                                                <span class="las la-comment"></span>
+                                                <span class="las la-phone"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="customer">
+                                            <div class="info">
+                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <div>
+                                                    <h4>Lewis S. Cunningham</h4>
+                                                    <small>CEO Expert</small>
+                                                </div>
+                                            </div>
+                                            <div class="contact">
+                                                <span class="las la-user-circle"></span>
+                                                <span class="las la-comment"></span>
+                                                <span class="las la-phone"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="customer">
+                                            <div class="info">
+                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <div>
+                                                    <h4>Lewis S. Cunningham</h4>
+                                                    <small>CEO Expert</small>
+                                                </div>
+                                            </div>
+                                            <div class="contact">
+                                                <span class="las la-user-circle"></span>
+                                                <span class="las la-comment"></span>
+                                                <span class="las la-phone"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="customer">
+                                            <div class="info">
+                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <div>
+                                                    <h4>Lewis S. Cunningham</h4>
+                                                    <small>CEO Expert</small>
+                                                </div>
+                                            </div>
+                                            <div class="contact">
+                                                <span class="las la-user-circle"></span>
+                                                <span class="las la-comment"></span>
+                                                <span class="las la-phone"></span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                    <section>
+                            <div class="title">
+                                <h1>Access Patients</h1>
+                                <div class="line"></div>
+                            </div>
+                    </section>
+                    <!--Access patient Id-->
+                    <div class="main-block">
+                        <h4>Enter Patient details</h4>
+                        <form action="/">
+                          <hr>
+                          <div class="account-type">
+                            <input type="radio" value="none" id="radioOne" name="account" checked/>
+                            <label for="radioOne" class="radio">Create new</label>
+                            <input type="radio" value="none" id="radioTwo" name="account" />
+                            <label for="radioTwo" class="radio">Access old</label>
+                          </div>
+                          <hr>
+                          <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                          <input type="text" name="name" id="name" placeholder="Enter Patient-ID" required/>
+                          
+                          <hr>
+                          <div class="btn-block">
+                            <button class="submit-btn">Submit</button>
+                          </div>
+                        </form>
+                      </div>
 
             </main>
         </div>

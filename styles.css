@@ -15,18 +15,6 @@ body{
     background-image: url(images/bg.svg);
     background-size: cover;
 }
-.navbar-css-container{
-    padding: 0;
-}
-.navbar-css{
-    background-color: #00C4CC; 
-}
-.logo-1{
-    height: 50px;
-}
-.user-icon{
-    height: 50px;
-}
 .heading-text{
     margin: 10% 0 0 10%;
 

@@ -1,91 +1,60 @@
   <!doctype html>
-                        <html>
-                            <head>
-                                <meta charset='utf-8'>
-                                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>Snippet - BBBootstrap</title>
-                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
-                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-                                <style>body {
-    color: #ffffff;
-    overflow-x: hidden;
-    height: 100%;
-    background-image: url("Background.svg");
-    background-repeat: no-repeat;
-    background-color: #00C4CC;
-    background-size: 100% 100%
-}
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Snippet - BBBootstrap</title>
+<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<link rel="stylesheet" href="styles.css">
+</head>
 
-.card {
-    padding: 30px 40px;
-    margin-top: 60px;
-    background-color: transparent;
-    margin-bottom: 60px;
-    border: none !important;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
-}
+<body oncontextmenu='return false' class='snippet-body'>
+<!-- <img src= "logo-sushruta-1.png" alt="LOGO" class="mr-3 mt-3 rounded-circle" style="width:100px;"> -->
+<nav class="navbar-css-container navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-css container-fluid">
+      <a class="navbar-brand" href="#"><img class= "logo-1" src="images\logo-sushruta.png" alt=""><img class= "logo-1" src="images\logo-sushruta-1.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">History</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Find
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="hospital website/index.html">Hospitals</a></li>
+              <li><a class="dropdown-item" href="Doctors/Attendence.html">Doctors</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Complaint/Sush_FaC.html">Complaints</a>
+          </li>
+        </ul>
 
-.blue-text {
-    color: white
-}
+        <div class="login">
+          <a href="Login/signup.html"><button type="button" class="login-button-1 btn btn-light">Sign Up</button></a>
+          <a href="Login/Login.html"><button type="button" class="login-button-2 btn btn-light">Log In</button></a>
+        </div>
 
-.form-control-label {
-    margin-bottom: 0
-}
+        <img class= "user-icon" src="images\user-icon.png" alt="">
+      </div>
+      
+    </div>
+  </nav>
 
-input,
-textarea,
-button {
-    padding: 8px 15px;
-    border-radius: 5px !important;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    font-size: 18px !important;
-    font-weight: 300
-}
-.form-select{
-    padding: 8px 15px;
-    border-radius: 5px !important;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    font-size: 18px !important;
-    font-weight: 300
-}
-input:focus,
-textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #00BCD4;
-    outline-width: 0;
-    font-weight: 400
-}
 
-.btn-block {
-    text-transform: uppercase;
-    font-size: 15px !important;
-    font-weight: 400;
-    height: 43px;
-    cursor: pointer
-}
-
-.btn-block:hover {
-    color: #fff !important
-}
-
-button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0
-}</style>
-                                </head>
-                                <body oncontextmenu='return false' class='snippet-body'>
-                                <img src= "logo-sushruta-1.png" alt="LOGO" class="mr-3 mt-3 rounded-circle" style="width:100px;">
-                                <div class="container-fluid px-1 py-5 mx-auto">
+<div class="container-fluid px-1 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
             <h3>Register your complaint</h3>

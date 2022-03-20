@@ -45,13 +45,6 @@ body{
     font-weight: bold;
 }
 
-.nha-pic{
-    width: 200px;
-    margin:auto 10% 10% auto;
-}
-.nha-pic img{
-    width: 200px;
-}
 .counter-container{
     margin: 0 0 0 10%;
 }
@@ -119,6 +112,14 @@ body{
     border-top:2em solid #fff;
   }
   
+.nha-pic{
+    width: 200px;
+    margin:auto 0 5% auto;
+}
+.nha-pic img{
+    width: 200px;
+}
+
 
 /* ============== Section 2 ==================== */
 #second{

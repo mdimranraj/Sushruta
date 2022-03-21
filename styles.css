@@ -133,6 +133,13 @@ body{
     font-size: 1rem;
     padding: 2% 0 0 0;
 }
+.second-text-list-head{
+    text-align: left;
+
+}
+.second-text-list{
+    text-align: left;
+}
 
 /* ================= Section 3 ================== */
 #footer{

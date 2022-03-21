@@ -130,11 +130,12 @@ body{
     color: #00C4CC ;
 }
 .second-text{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 2% 0 0 0;
 }
 .second-text-list-head{
     text-align: left;
+    font-weight: bold;
 
 }
 .second-text-list{

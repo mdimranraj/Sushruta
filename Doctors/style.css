@@ -80,6 +80,7 @@ main {
     padding: 2rem 1.5rem;
     background-image: url(images/background.jpeg);
     background-repeat: repeat;
+    height: 100%;
 }
 .start {
     display: grid;

@@ -79,6 +79,7 @@ main {
     margin-top: 50px;
     padding: 2rem 1.5rem;
     background-image: url(images/background.jpeg);
+    background-repeat: repeat;
 }
 .start {
     display: grid;

@@ -78,7 +78,7 @@ header label span {
 main {
     margin-top: 50px;
     padding: 2rem 1.5rem;
-    background-image: url(background.jpeg);
+    background-image: url(images/bg.svg);
     min-height: calc(100vh - 20px);
 }
 .start {

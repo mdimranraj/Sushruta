@@ -28,7 +28,7 @@ h1 {
     background-color: #00c4cc;
 	background-image: url('back.jpeg');
     color: #fff;
-    padding: 100px 25px;
+    padding: 25px 25px;
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -52,6 +52,7 @@ h1 {
     height: 100%;
     margin-bottom: 10px;
   }
+
   .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #fff;
@@ -153,6 +154,22 @@ section{
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+
+.card {
+            margin-right: auto;
+            margin-left: auto;
+            width: 400px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            height: 500px;
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
   @keyframes slide {
     0% {
       opacity: 0;

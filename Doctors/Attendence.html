@@ -87,8 +87,14 @@
         </div>
 
             <main>
+                <section>
+                    <div class="title">
+                        <h1>Doctors Dashboard</h1>
+                        <div class="line"></div>
+                    </div>
+                </section>
                 <div class="start">
-                    <img src="images/doctor.png" width="600px" height="500px" alt="">
+                    <img src="images/doctor.png" width="450px" height="350px" alt="">
                     <div class="check-in">
                      <h5>Check-in time</h5>
                     <div class="wrapper">
@@ -103,10 +109,35 @@
                         </div>
                         <div class="buttons">
                             <button class="start">Start</button>
+                        </div>
+                        <div class="buttons">
                             <button class="stop">Stop</button>
                         </div>
                     </div>
-                </div>      
+                </div> 
+                    
+                 <!--Access patient Id-->
+                <div class="main-block">
+                    <h4>Enter Patient details</h4>
+                    <form action="/">
+                      <hr>
+                      <div class="account-type">
+                        <input type="radio" value="none" id="radioOne" name="account" checked/>
+                        <label for="radioOne" class="radio">Create new</label>
+                        <input type="radio" value="none" id="radioTwo" name="account" />
+                        <label for="radioTwo" class="radio">Access old</label>
+                      </div>
+                      <hr>
+                      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+                      <input type="text" name="name" id="name" placeholder="Enter Patient-ID" required/>
+                      
+                      <hr>
+                      <div class="btn-block">
+                        <button class="submit-btn">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
                 </div>
                 <section>
                     <div class="title">
@@ -118,20 +149,22 @@
                     <div class="card-single">
                         <div>
                             <h1>54</h1>
-                            <span>Doctors</span>
+                            <span>Total working days</span>
                         </div>
                         <div>
                             <span class ="las la-users"></span>
+                            <button class="learn">View Details</button>
                         </div>
                     </div>
 
                     <div class="card-single">
                         <div>
                             <h1>79</h1>
-                            <span>Currently Available</span>
+                            <span>Leave days</span>
                         </div>
                         <div>
                             <span class ="las la-clipboard"></span>
+                            <button class="learn">View Details</button>
                         </div>
                     </div>
 
@@ -141,7 +174,8 @@
                             <span>Reports pending</span>
                         </div>
                         <div>
-                            <span class ="las la-shopping-bag"></span>
+                            <span class ="las la-clipboard"></span>
+                            <button class="learn">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -178,7 +212,7 @@
                                                 <td>92%</td>
                                                 <td>
                                                     <span class="status"></span>
-                                                    review
+                                                    Review
                                                 </td>
                                             </tr>
                                             <tr>
@@ -186,7 +220,7 @@
                                                 <td>60%</td>
                                                <td>
                                                    <span class="status"></span>
-                                                   in progress
+                                                   In progress
                                                </td>                                    
                                              </tr>
                                             <tr>
@@ -194,7 +228,7 @@
                                                 <td>20%</td>
                                                 <td>
                                                     <span class="status"></span>
-                                                    pending
+                                                    Pending
                                                 </td>
                                             </tr>
                                             <tr>
@@ -202,7 +236,7 @@
                                                 <td>92%</td>
                                                 <td>
                                                     <span class="status"></span>
-                                                    review
+                                                    Review
                                                 </td>
                                             </tr>
                                             <tr>
@@ -210,7 +244,7 @@
                                                 <td>92%</td>
                                                 <td>
                                                     <span class="status"></span>
-                                                    review
+                                                    Review
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -265,7 +299,7 @@
                                     <div class="card-body">
                                         <div class="customer">
                                             <div class="info">
-                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <img src="images/user-icon.png" width="40px" height="40px" alt="">
                                                 <div>
                                                     <h4>Lewis S. Cunningham</h4>
                                                     <small>CEO Expert</small>
@@ -280,7 +314,7 @@
 
                                         <div class="customer">
                                             <div class="info">
-                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <img src="images/user-icon.png" width="40px" height="40px" alt="">
                                                 <div>
                                                     <h4>Lewis S. Cunningham</h4>
                                                     <small>CEO Expert</small>
@@ -295,7 +329,7 @@
 
                                         <div class="customer">
                                             <div class="info">
-                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <img src="images/user-icon.png" width="40px" height="40px" alt="">
                                                 <div>
                                                     <h4>Lewis S. Cunningham</h4>
                                                     <small>CEO Expert</small>
@@ -310,7 +344,7 @@
 
                                         <div class="customer">
                                             <div class="info">
-                                                <img src="icons8-user-66.png" width="40px" height="40px" alt="">
+                                                <img src="images/user-icon.png" width="40px" height="40px" alt="">
                                                 <div>
                                                     <h4>Lewis S. Cunningham</h4>
                                                     <small>CEO Expert</small>
@@ -326,34 +360,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                    <section>
-                            <div class="title">
-                                <h1>Access Patients</h1>
-                                <div class="line"></div>
-                            </div>
-                    </section>
-                    <!--Access patient Id-->
-                    <div class="main-block">
-                        <h4>Enter Patient details</h4>
-                        <form action="/">
-                          <hr>
-                          <div class="account-type">
-                            <input type="radio" value="none" id="radioOne" name="account" checked/>
-                            <label for="radioOne" class="radio">Create new</label>
-                            <input type="radio" value="none" id="radioTwo" name="account" />
-                            <label for="radioTwo" class="radio">Access old</label>
-                          </div>
-                          <hr>
-                          <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-                          <input type="text" name="name" id="name" placeholder="Enter Patient-ID" required/>
-                          
-                          <hr>
-                          <div class="btn-block">
-                            <button class="submit-btn">Submit</button>
-                          </div>
-                        </form>
-                      </div>
 
             </main>
         </div>

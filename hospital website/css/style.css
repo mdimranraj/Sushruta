@@ -19,6 +19,10 @@
     transition: all .2s ease-out;
     text-decoration: none;
 }
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
 
 html{
     font-size: 62.5%;
@@ -389,3 +393,32 @@ section:nth-child(even){
     }
 
 }
+
+#footer{
+    background-color: #00C4CC;
+    height: fit-content;
+    
+}
+.container{
+    padding: 15px;
+}
+.container-inside{
+    display: flex;
+    justify-content: space-around !important;
+    font-size: 1.5rem !important;
+    line-height: 1.5;
+}
+.footer-heading{
+    color: #fff;
+    font-size: 2rem !important;
+    padding-bottom: 10px;
+    
+}
+.footer-ln-pic{
+    width: 1rem;
+}
+.copyright{
+    text-align: center;
+    font-weight: bold;
+}
+

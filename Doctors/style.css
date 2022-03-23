@@ -82,9 +82,10 @@ main {
     background-repeat: repeat;
     height: 100%;
 }
-.start {
+.start, .stop {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    width: fit-content !important;
 }
 .check-in {
     background-color: #EFFFFD;
@@ -227,9 +228,11 @@ section {
     /* grid-gap: 2rem;
     grid-template-columns: 90% auto; */
 }
+
 .card {
     background: #EFFFFD;
     border-radius: 5px;
+    width: 120%;
 }
 .card-header,
 .card-body {
@@ -468,4 +471,26 @@ tr td:last-child {
     .recent-grid {
         grid-template-columns:60% 40%;
     }
+}
+
+
+#footer{
+    background-color: #00C4CC;
+    height: fit-content;
+}
+.container{
+    padding: 15px;
+}
+.container-inside{
+    justify-content: space-around !important;
+}
+.footer-heading{
+    color: #fff;
+}
+.footer-ln-pic{
+    width: 1rem;
+}
+.copyright{
+    text-align: center;
+    font-weight: bold;
 }

@@ -219,9 +219,13 @@ section {
 }
 .recent-grid {
     margin-top: 3.5rem;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 90% auto;
+    /* display: grid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    /* grid-gap: 2rem;
+    grid-template-columns: 90% auto; */
 }
 .card {
     background: #EFFFFD;
